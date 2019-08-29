@@ -7,8 +7,6 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 
-import com.sun.javafx.collections.MappingChange.Map;
-
 public class A1Adept {
 
 	public static void main(String[] args) { //throws FileNotFoundException {
