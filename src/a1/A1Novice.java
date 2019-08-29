@@ -1,5 +1,6 @@
 package a1;
 
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class A1Novice {
@@ -7,6 +8,9 @@ public class A1Novice {
 	public static void main(String[] args) {
 		
 		Scanner scan = new Scanner(System.in);
+		
+		//format decimal
+		DecimalFormat df = new DecimalFormat("##.00");
 		
 		//declare variables
 		String nope;
@@ -43,7 +47,7 @@ public class A1Novice {
 			}
 				
 		for(int i = 0; i < count; i++)
-			System.out.println(first_n[i].charAt(0)+". " + last_n[i] + ": " + totals[i]);
+			System.out.println(first_n[i].charAt(0)+". " + last_n[i] + ": " + df.format(totals[i]));
 		
 		scan.close();
 		
