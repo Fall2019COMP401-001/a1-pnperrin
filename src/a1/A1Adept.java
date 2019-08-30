@@ -102,7 +102,7 @@ public class A1Adept {
 			}
 		}
 		//void output
-		System.out.println("Lowest: " + first_n[min_index] + " " + last_n[min_index] + " (" + df.format(min) +")");
+		System.out.println("Smallest: " + first_n[min_index] + " " + last_n[min_index] + " (" + df.format(min) +")");
 	}
 	
 	/////////////////////////////////////////////
