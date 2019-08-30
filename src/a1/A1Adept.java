@@ -125,6 +125,6 @@ public class A1Adept {
 		average = total_spent/(double)totals.length;
 		
 		//void output
-		System.out.println("AVERAGE: " + df.format(average));
+		System.out.println("Average: " + df.format(average));
 	}
 }

@@ -47,7 +47,7 @@ public class A1Novice {
 			}
 				
 		for(int i = 0; i < count; i++)
-			System.out.println(first_n[i].charAt(0)+". " + last_n[i] + ": " + (0.0 + df.format(totals[i])));
+			System.out.println(first_n[i].charAt(0)+". " + last_n[i] + ": " + String.format("%.2f", totals[i]));
 		
 		scan.close();
 		
