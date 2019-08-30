@@ -1,8 +1,5 @@
 package a1;
 
-//import java.io.File;
-//import java.io.FileNotFoundException;
-import java.text.DecimalFormat;
 import java.util.HashMap;
 import java.util.Scanner;
 
@@ -61,9 +58,6 @@ public class A1Adept {
 	
 	//find the max amount
 	private static void getHighest(double[] totals, String[] first_n, String[] last_n) {
-		
-		//format decimal
-		DecimalFormat df = new DecimalFormat("##.00");
 
 		//local var
 		String name;
@@ -78,16 +72,13 @@ public class A1Adept {
 			}
 		}
 		//void output
-		System.out.println("Biggest: " + first_n[max_index] + " " + last_n[max_index] + " (" + df.format(max) +")");
+		System.out.println("Biggest: " + first_n[max_index] + " " + last_n[max_index] + " (" + String.format("%.2f", max) +")");
 	}
 	
 	/////////////////////////////////////////////
 	
 	//find the min amount
 	private static void getLowest(double[] totals, String[] first_n, String[] last_n) {
-		
-		//format decimal
-		DecimalFormat df = new DecimalFormat("##.00");
 		
 		//local var
 		String name;
@@ -102,16 +93,13 @@ public class A1Adept {
 			}
 		}
 		//void output
-		System.out.println("Smallest: " + first_n[min_index] + " " + last_n[min_index] + " (" + df.format(min) +")");
+		System.out.println("Smallest: " + first_n[min_index] + " " + last_n[min_index] + " (" + String.format("%.2f", min) +")");
 	}
 	
 	/////////////////////////////////////////////
 
 	//calculate average
 	private static void getAverage(double[] totals) {
-		
-		//format decimal
-		DecimalFormat df = new DecimalFormat("##.00");
 		
 		//local var
 		double total_spent = 0;
@@ -125,6 +113,6 @@ public class A1Adept {
 		average = total_spent/(double)totals.length;
 		
 		//void output
-		System.out.println("Average: " + df.format(average));
+		System.out.println("Average: " + String.format("%.2f", average));
 	}
 }
