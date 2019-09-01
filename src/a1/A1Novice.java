@@ -30,10 +30,15 @@ public class A1Novice {
 		
 		//fill arrays
 		for(int i = 0; i < count; i++) {
+			
+			//fill name arrays
 			first_n[i] = scan.next();
 			last_n[i] = scan.next();
+			
+			//get the number of items
 			number_items = scan.nextInt();
 			
+			//get quantity/individual cost and total cost
 			for(int j = 0; j < number_items; j++) {
 				quantity = scan.nextInt();
 				nope = scan.next();
@@ -41,7 +46,8 @@ public class A1Novice {
 				totals[i] += quantity*cost;
 				}
 			}
-				
+		
+		//print each customer and their total
 		for(int i = 0; i < count; i++)
 			System.out.println(first_n[i].charAt(0)+". " + last_n[i] + ": " + String.format("%.2f", totals[i]));
 		

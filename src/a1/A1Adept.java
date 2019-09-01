@@ -20,6 +20,7 @@ public class A1Adept {
 		int count_people;
 		int count_purchase;
 		
+		//get the number of items
 		count_items = scan.nextInt();
 		
 		//put values for items and their price in map
@@ -27,6 +28,7 @@ public class A1Adept {
 			map.put(scan.next(), scan.nextDouble());
 		}
 		
+		//number of people
 		count_people = scan.nextInt();
 		
 		//declare names and totals arrays
@@ -56,7 +58,15 @@ public class A1Adept {
 
 	/* VOID METHODS */
 	
-	//find the max amount
+	/* find the max amount: getHighest
+	 * 
+	 * Input: arrays total, first names, last names
+	 * 
+	 * Output: printout of max price/customer
+	 * 
+	 * Precondition: initialized/ not null arrays
+	 */
+	
 	private static void getHighest(double[] totals, String[] first_n, String[] last_n) {
 
 		//local var
