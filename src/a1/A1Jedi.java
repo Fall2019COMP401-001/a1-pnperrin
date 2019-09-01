@@ -53,10 +53,10 @@ public class A1Jedi {
 			for (int j = 0; j < count_purchase; j++) {
 				
 				quantity = scan.nextInt();
-				
 				item = scan.next();
+				
 				for (int z = 0; z < items.length; z++) {
-					if(items[z].equals(item)) {
+					if(items.equals(items[z])) {
 						number_customer[z]++;
 						number_items[z] += quantity;
 					}
